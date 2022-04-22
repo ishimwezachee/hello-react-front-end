@@ -1,5 +1,5 @@
-# hello-rails-back-end
-This is a simple project that provide greetings as an api that will be connected to react front end project
+# hello-react-front-end
+This is a simple project that provide random greetings in browser 
 
 ## Built With
 
@@ -11,9 +11,9 @@ This is a simple project that provide greetings as an api that will be connected
 
 To get a local copy up and running follow these simple example steps.
 
-git clone https://github.com/Danieldotcomcoder/hello-react-rails.git
+git clone https://github.com/ishimwezachee/hello-react-front-end.git
 
-cd hello-react-rails
+cd hello-react-front-end
 
 ### Setup
 
