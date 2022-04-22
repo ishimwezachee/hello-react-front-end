@@ -1,3 +1,5 @@
+/* eslint-disable react/prop-types */
+/* eslint-disable react/destructuring-assignment */
 import React from 'react';
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
@@ -5,8 +7,14 @@ import { createStructuredSelector } from 'reselect';
 const GET_THINGS_REQUEST = 'GET_THINGS_REQUEST';
 export const GET_THINGS_SUCCESS = 'GET_THINGS_SUCCESS';
 
+export function getThingsSuccess(json) {
+  return {
+    type: GET_THINGS_SUCCESS,
+    json,
+  };
+}
+
 function getThings() {
-  console.log('getThings()Action!');
   return (dispatch) => {
     dispatch({ type: GET_THINGS_REQUEST });
     return fetch('http://localhost:3000/greetings')
@@ -16,13 +24,7 @@ function getThings() {
   };
 }
 
-export function getThingsSuccess(json) {
-  return {
-    type: GET_THINGS_SUCCESS,
-    json,
-  };
-}
-
+// eslint-disable-next-line react/prefer-stateless-function
 class HelloWorld extends React.Component {
   render() {
     const { greetings } = this.props;
@@ -33,7 +35,7 @@ class HelloWorld extends React.Component {
         {' '}
         <p>{randomGreeting.name}</p>
         <br />
-        <button className="getThingsBtn" onClick={() => this.props.getThings()}>Greet Me</button>
+        <button type="button" className="getThingsBtn" onClick={() => this.props.getThings()}>Greet Me</button>
       </>
     );
   }
@@ -44,5 +46,9 @@ const structuredSelector = createStructuredSelector({
 });
 
 const mapDispatchToProps = { getThings };
+
+// HelloWorld.propTypes = {
+//   greetings: PropTypes.string.isRequired,
+// };
 
 export default connect(structuredSelector, mapDispatchToProps)(HelloWorld);
