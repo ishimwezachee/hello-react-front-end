@@ -1,67 +1,24 @@
-# hello-rails-back-end
-This is a simple project that provide greetings as an api that will be connected to react front end project
+# hello-react-front-end
+This is a simple project that provide random greetings in browser 
 
 ## Built With
-
-- Ruby
-- Ruby on Rails
-- Javascript
-- React
+- React-Redux
+- CSS3
+### Technologies used
+- Github
+- Gitflow
+- Visual Studio Code
 ## Getting Started
 
-To get a local copy up and running follow these simple example steps.
+ To clone this project :
 
-git clone https://github.com/Danieldotcomcoder/hello-react-rails.git
+* Run command: `git clone https://github.com/ishimwezachee/hello-react-front-end.git`
+* Or press the green Code button in the upper right corner and choose to download from the Download ZIP link.
+* Open terminal and type : 1-  npm install
+                           2-  npm run build.
+                           3-  npm start. 
+                           4-  port:3001
 
-cd hello-react-rails
-
-### Setup
-
-Install npm with:
-
-```
-npm i
-```
-Install gems with:
-
-```
-bundle install
-```
-Setup database with:
-
-```
-rails db:create
-rails db:migrate
-```
-### Usage
-
-Start server with:
-
-```
-rails server
-```
-
-Open http://localhost:3000/ in your browser.
-
-### Run tests
-
-Install rspec with:
-
-```
-bundle install
-```
-
-and
-
-```
-rails generate rspec:install
-```
-
-run the test with:
-
-```
-rspec spec
-```
 
 👤 **Zachee Ishimwe**
 
@@ -69,7 +26,17 @@ rspec spec
 - LinkedIn: [@zacheeIshimwe](https://www.linkedin.com/in/zachee-ishimwe-ab952a119/)
 
 
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](../../issues/).
+
 ## Show your support
 
 Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- Hat tip to anyone whose code was used
 
